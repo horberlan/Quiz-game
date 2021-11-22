@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: var(--transition);
+  transition: 3s;
   z-index: -1;
 }
 .isOpen {
@@ -28,10 +28,10 @@ const GlobalStyle = createGlobalStyle`
   border-radius: 28px;
   background: #ffffff;
   opacity:.8;
-  width: 90vw;
-  max-width: var(--fixed-width);
+  width: 30vw;
+  max-width: 40vw;
   padding: 3rem;
-  border-radius: var(--radius);
+  border-radius: 28px;
   text-align: center;
   position: relative;
 }
@@ -49,13 +49,13 @@ const Modal = () => {
     <div className={`${isModalOpen ? 'modal-container isOpen' : 'modal-container'}`}>
       <GlobalStyle/>
       <div className="modal-content">
-        <h2>congrats
+        <h2>Congratulations!
         
         </h2>
         <p>
-          you answered {((correct / questions.length) * 100).toFixed(0)}% of questions correctly
+          you answered {((correct / questions.length) * 100).toFixed(0)}% of the correct questions
         </p>
-        <Button variant="contained" onClick={closeModal}> play again</Button>
+        <Button onClick={closeModal}> play again</Button>
        
       </div>
     </div>
