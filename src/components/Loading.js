@@ -13,7 +13,7 @@ content: '';
 box-sizing: border-box;
 position: absolute;
 top: 35%;
-left: 50%;
+left: 45%;
 width: 200px;
 height: 200px;
 // margin-top: -10px;
