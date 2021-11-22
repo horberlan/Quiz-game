@@ -9,7 +9,7 @@ render() {
         url="come-on-boy-8018.mp3"
         autoPlay={true}
         playFromPosition = {300}
-        position={0.3}
+        // position={0.3}
         playStatus={Sound.status.PLAYING}
         loop={true}
         autoLoad={true}

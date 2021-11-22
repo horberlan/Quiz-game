@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { useGlobalContext } from '../context'
+import { useGlobalContext } from '../Settings'
 import Button from '@material-ui/core/Button';
 import GlobalStyle from './GlobalStyle';
 import TextField from '@material-ui/core/TextField';

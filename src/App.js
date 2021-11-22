@@ -1,11 +1,11 @@
 import React from 'react'
 import GlobalStyle, {BtnAnswer,BtnContainer} from './components/GlobalStyle';
-import { useGlobalContext } from './context'
+import { useGlobalContext } from './Settings'
 import Button from '@material-ui/core/Button';
 import Form from './components/Questions';
-import Loading from './Loading';
-import Modal from './Modal';
-import Sounds from './components/Sound';
+import Loading from './components/Loading';
+import Modal from './components/Modal';
+
 function App() {
   const {
     waiting,
@@ -69,7 +69,7 @@ function App() {
         <Button variant="outlined" color="secondary" >
         Cancel
       </Button>
-      <Sounds/>
+      
       </section>
     
     </>
