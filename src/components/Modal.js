@@ -28,7 +28,8 @@ const GlobalStyle = createGlobalStyle`
   border-radius: 28px;
   background: #ffffff;
   opacity:.8;
-  width: 50vw;
+  width: 90vw;
+  
   max-width: 100vw;
   padding: 3rem;
   border-radius: 28px;
