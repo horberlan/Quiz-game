@@ -4,9 +4,14 @@ import { useGlobalContext } from './Settings'
 import Button from '@material-ui/core/Button';
 import Form from './components/Questions';
 import Loading from './components/Loading';
-import Modal from './components/Modal';
+import ModalComponent from './components/Modal';
 
 function App() {
+
+  async function refreshPage() {
+    window.location.reload(false);
+  }
+  
   const {
     waiting,
     loading,
@@ -39,7 +44,7 @@ function App() {
   return (
     <>
 
-      <Modal />
+      <ModalComponent />
       <GlobalStyle/>
       
       <section className="quiz quiz-mobile">
@@ -66,7 +71,7 @@ function App() {
         <Button variant="outlined" color="primary" 
         style={{margin:"0 10px"}}
         onClick={nextQuestion}>next</Button>
-        <Button variant="outlined" color="secondary" >
+        <Button variant="outlined" color="error" onClick={refreshPage} >
         Cancel
       </Button>
       

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import GlobalStyle from './GlobalStyle';
 
 const Spinner = styled.div`
 
@@ -8,20 +9,26 @@ const Spinner = styled.div`
     transform: rotate(360deg);
   }
 }
-
-
-  width: 6rem;
-  height: 6rem;
-  margin: 0 auto;
-  margin-top: 10rem;
-  border-radius: 50%;
-  border: 3px solid #ccc;
-  border-top-color: var(--clr-primary-5);
-  animation: spinner 0.6s linear infinite;
+content: '';
+box-sizing: border-box;
+position: absolute;
+top: 35%;
+left: 50%;
+width: 200px;
+height: 200px;
+// margin-top: -10px;
+// margin-left: -10px;
+border-radius: 50%;
+border-top: 2px solid #D4F1F4;
+border-right: 2px solid transparent;
+animation: spinner .6s linear infinite;
 `;
+
+
 const Loading = () => {
   return (
     <main>
+      <GlobalStyle/>
       <Spinner></Spinner>
     </main>
   )
