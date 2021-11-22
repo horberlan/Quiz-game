@@ -1,13 +1,53 @@
 import React from 'react'
 import { useGlobalContext } from '../Settings'
 import Button from '@material-ui/core/Button';
+import { createGlobalStyle } from 'styled-components';
 
+const GlobalStyle = createGlobalStyle`
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+  z-index: -1;
+}
+.isOpen {
+  opacity: 1;
+  z-index: 999;
+}
+
+.modal-content {
+  border-radius: 28px;
+  background: #ffffff;
+  opacity:.8;
+  width: 90vw;
+  max-width: var(--fixed-width);
+  padding: 3rem;
+  border-radius: var(--radius);
+  text-align: center;
+  position: relative;
+}
+.modal-content p {
+  font-size: 1.5rem;
+  text-transform: none;
+}
+
+`;
 const Modal = () => {
 
   const { isModalOpen, closeModal, correct, questions } = useGlobalContext()
   return (
+    
     <div className={`${isModalOpen ? 'modal-container isOpen' : 'modal-container'}`}>
-      
+      <GlobalStyle/>
       <div className="modal-content">
         <h2>congrats
         

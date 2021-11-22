@@ -71,6 +71,21 @@ const GlobalStyle = createGlobalStyle`
 
   }
 
+.quiz {
+  text-align: center;
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 4rem auto;
+  background: #ffffff;
+  opacity: 0.7;
+  border-radius:28px;
+  padding: 3rem;
+}
+.quiz-mobile {
+  max-width: 500px;
+}
+
+
 `;
 export default GlobalStyle;
 

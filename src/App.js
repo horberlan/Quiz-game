@@ -42,7 +42,7 @@ function App() {
       <Modal />
       <GlobalStyle/>
       
-      <section className="quiz">
+      <section className="quiz quiz-mobile">
         <p className="correct-answer">
           correct answers: {correct}/{index}
         </p>

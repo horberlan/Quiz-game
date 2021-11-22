@@ -1,0 +1,43 @@
+*, ::after, ::before
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+ul
+  list-style-type: none
+
+a
+  text-decoration: none
+
+p
+  margin: 1rem 1.25rem
+  color: #31687f
+
+@media screen and (min-width: 800px)
+  h1
+    font-size: 3rem
+
+  h2
+    font-size: 2.5rem
+
+  h3
+    font-size: 1.75rem
+
+  h4, body
+    font-size: 1rem
+
+  h1, h2, h3, h4
+    line-height: 1
+    
+.section
+  width: 90vw
+  margin: 0 auto
+  max-width: var(--max-width)
+
+@media screen and (min-width: 992px)
+  .section
+    width: 95vw
+
+.error
+  color: #31687f
+  text-transform: capitalize
