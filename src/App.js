@@ -9,7 +9,7 @@ import ModalComponent from './components/Modal';
 function App() {
 
   async function refreshPage() {
-    window.location.reload(false);
+    window.location.reload();
   }
   
   const {

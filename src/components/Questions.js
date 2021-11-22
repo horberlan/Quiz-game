@@ -48,8 +48,7 @@ const Form = () => {
   const handleClose = () => setOpen(false);
  
   async function refreshPage() {
-    window.location.reload(false);
-  }
+    window.location.reload();  }
   return (
     <>
       <GlobalStyle/>
